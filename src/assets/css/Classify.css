@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    text-align: center;
+}
+
+.top>.box {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 36px;
+    border: 1px solid #ffffff;
+    border-radius: 18px;
+}
+
+.top>.box>p {
+    flex: 1;
+    line-height: 35px;
+}
+
+.active {
+    transition: .2s ease-in;
+    width: 50%;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 17.5px;
+}
